@@ -4,13 +4,30 @@ a fine-grained alternative to FastCast
 
 ## Installation
 
-flashcast is up on wally. you can install it simply by putting this in your `wally.toml` file
-
-```toml
-Flashcast = "synpixel/flashcast@3.0.3"
+1. Configure your `.npmrc`
+```ini
+public-hoist-pattern[]=*@rbxts*
+@belkworks:registry=https://npm.pkg.github.com
 ```
 
-## Examples
+2. Configure your `typeRoots`
+```json
+"typeRoots": ["node_modules/@rbxts", "node_modules/@belkworks"]
+```
 
-- https://www.roblox.com/games/17695354946/Flashcast-Example-1
-- https://www.roblox.com/games/17696744681/Flashcast-Example-2
+3. Add `@belkworks` to your Rojo project file
+```json
+"node_modules": {
+	"@rbxts": {
+		"$path": "node_modules/@rbxts"
+	},
+	"@belkworks": {
+		"$path": "node_modules/@belkworks"
+	}
+}
+```
+
+4. Install the package
+```sh
+pnpm add @belkworks/flashcast
+```
