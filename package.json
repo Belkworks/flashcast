@@ -1,0 +1,9 @@
+{
+  "name": "@belkworks/flashcast",
+  "version": "3.0.3",
+  "devDependencies": {
+    "@rbxts/compiler-types": "2.3.0-types.1",
+    "@rbxts/types": "^1.0.794",
+    "typescript": "^5.5.4"
+  }
+}
