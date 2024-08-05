@@ -1,6 +1,19 @@
 {
   "name": "@belkworks/flashcast",
+  "description": "a fine-grained alternative to FastCast",
+  "author": "synpixel",
   "version": "3.0.3",
+  "main": "src/init.lua",
+  "types": "src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Belkworks/flashcast"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  },
+  "files": ["src"],
   "devDependencies": {
     "@rbxts/compiler-types": "2.3.0-types.1",
     "@rbxts/types": "^1.0.794",
