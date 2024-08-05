@@ -282,6 +282,6 @@ export type Flashcast = typeof(createFlashcast(...))
 export type Behavior = typeof(createBehavior(...))
 
 return {
-	new = createFlashcast,
+	Flashcast = { new = createFlashcast },
 	createBehavior = createBehavior,
 }
